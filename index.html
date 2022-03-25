@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dogs Page</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/c10a221943.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main class="main">
+            <header class="header">
+                <nav class="nav">
+                    <div class="mobile-navigation">
+                        <a href=".">
+                            <i class="logo fa-solid fa-paw"></i>
+                        </a>
+    
+                        <div class="container-hamburger">
+                            <span class="hamburger">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <ul class="menu">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="background">
+                <div class="cover">
+                    <h1 class="title">Leve um cachorro</h1>
+                </div>
+            </section>
+
+            <section id="about">
+                <!-- <div class="container-about">
+                    <img src="img/test.jpg" alt="dog" class="img-about">
+                    <div class="content">
+                        <h2 class="subtitle">Quem somos?</h2>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem itaque nobis quis placeat asperiores vel facilis tenetur libero minus!</p>
+                    </div>
+                </div> -->
+            </section>
+
+            <section class="second-background">
+                <div class="cover">
+                    <h1 class="title">
+                        Você não vai se arrepender
+                    </h1>
+                </div>
+            </section>
+
+            <section id="services">
+                <div class="post-service">
+                    <i class="fa-solid fa-dog"></i>
+                    <h2 class="title-service">Venda</h2>
+                    <p class="description-service">Em nossa pet shop, você pode escolher o filhote de sua preferência. Temos diversas raças disponíveis!</p>
+                </div>
+                <div class="post-service">
+                    <i class="fa-solid fa-bone"></i>
+                    <h2 class="title-service">Adestramento</h2>
+                    <p class="description-service">Se já tiver um cachorro em casa, pode trazê-lo para o adrestrarmos, pode ser filhote ou adulto.</p>
+                </div>
+                <div class="post-service">
+                    <i class="fa-solid fa-shower"></i>
+                    <h2 class="title-service">Banho</h2>
+                    <p class="description-service">Em nossos serviços, banho também está incluso. Traga seu pet e nós pouparemos trabalho para você!</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="cover">
+                    <h1 class="title">Fale conosco</h1>
+                    <a href="https://github.com/josevini" target="_blank" class="cta">Contato</a>
+                </div>
+            </section>
+
+            <footer class="footer">
+                Site criado por Vinicius Silva
+            </footer>
+            <a class="top" onclick="up()">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </main>
+        <script>
+            const btnTop = document.querySelector('.top')
+
+            function up() {
+                document.documentElement.scrollTop = 0;
+            }
+            
+            function scroll() {
+                if (document.documentElement.scrollTop >= 480) {
+                    btnTop.style.display = 'block';
+                } else {
+                    btnTop.style.display = 'none';
+                }
+            }
+            
+            window.onscroll = function() {scroll()}
+        </script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
