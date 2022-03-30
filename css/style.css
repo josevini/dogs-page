@@ -39,23 +39,21 @@ html {
     font-size: 2.5em;
 }
 
-.hamburger {
+.container-hamburger {
     display: none;
-    width: 18px;
-    height: 15px;
+    width: 35px;
+    height: 35px;
     position: relative;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    background-color: #8080802f;
+    border-radius: 3px;
 }
 
-.hamburger::after {
-    content: "";
-    width: 18px;
-    height: 2px;
-    top: 50%;
-    transform: translate(0, -50%);
+.hamburger {
     position: absolute;
-    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 .mobile-navigation {
@@ -102,7 +100,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .cover {
@@ -264,36 +262,6 @@ section {
     }
 
     .container-hamburger {
-        position: relative;
-        background-color: rgba(128, 128, 128, 0.185);
-        padding: 10px;
-        border-radius: 3px;
-    }
-
-    .container-hamburger > .hamburger > i {
-        display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.5em;
-        color: #ffffff;
-    }
-
-    .container-hamburger > .hamburger.cancel > i {
-        display: block;
-    }
-
-    .container-hamburger > .hamburger.cancel {
-        border: none;
-    }
-
-    .container-hamburger > .hamburger.cancel::after {
-        content: "";
-        display: none;
-    }
-
-    .hamburger {
         display: block;
     }
 

@@ -5,5 +5,14 @@ toggler.addEventListener('click', function() {
     menu.classList.toggle('mobile')
 
     const icon = document.querySelector('.hamburger')
-    icon.classList.toggle('cancel')
+    switch (icon.innerText) {
+        case 'menu':
+            icon.innerText = 'close'
+            break
+        case 'close':
+            icon.innerText = 'menu'
+            break
+        default:
+            icon.innerText = 'error'
+    }
 })
