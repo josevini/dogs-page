@@ -204,32 +204,34 @@ section#contact {
     background-color: var(--color-cta-hover);
 }
 
-section#about > .container-about {
-    width: auto;
+section#about {
+    height: auto;
+    background-color: #fff;
     display: flex;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.img-about {
-    margin: 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
 }
 
 .content {
-    width: 470px;
-    margin: 0 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 30px;
 }
 
-.subtitle {
+.prefix {
+    font-weight: bold;
+}
+
+.title-about {
     font-size: 1.8em;
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 .description {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 section {
@@ -252,6 +254,10 @@ section {
     .title {
         font-size: 2em;
     }
+
+    /* .prefix, .title-about {
+        text-align: center;
+    } */
 }
 
 @media (max-width: 768px) {
